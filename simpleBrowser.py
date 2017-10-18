@@ -106,7 +106,7 @@ if __name__ == "__main__":
     page = QWebPage()
     page.setNetworkAccessManager(networkManager)
     browser.setPage(page)
-    browser.load(QUrl("http://s01autozone.taleo.net"))
+    browser.load(QUrl(""))  # Defaul URL
     #browser.load(QUrl(""))
     QWebSettings.globalSettings().setAttribute(QWebSettings.PluginsEnabled, True)  # Enable Flash
     jsEval = JavaScriptEvaluator(page)  # Allow JS Rendering
